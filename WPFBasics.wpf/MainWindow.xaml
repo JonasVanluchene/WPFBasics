@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFBasics.wpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <WrapPanel x:Name="wrpInput" Background="Beige">
+            <TextBox x:Name="txtName" TextWrapping="Wrap" Text="" Width="120" Margin="10" />
+            <Button x:Name="btnSubmitName" Content="Voeg toe" Margin="10" Click="btnSubmitName_Click" />
+        </WrapPanel>
+        <WrapPanel x:Name="wrpResult" Grid.Column="1"/>
 
     </Grid>
 </Window>

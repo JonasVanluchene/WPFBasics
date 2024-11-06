@@ -20,5 +20,18 @@ namespace WPFBasics.wpf
         {
             InitializeComponent();
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            txtName.Focus();
+        }
+
+        private void btnSubmitName_Click(object sender, RoutedEventArgs e)
+        {
+            TextBlock txb = new TextBlock();
+            txb.Text = $"Welkom, {txtName.Text}!";
+            txb.Margin = new Thickness(10);
+            wrpResult.Children.Add(txb);
+        }
     }
 }
