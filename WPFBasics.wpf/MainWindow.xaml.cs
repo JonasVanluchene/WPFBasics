@@ -28,10 +28,36 @@ namespace WPFBasics.wpf
 
         private void btnSubmitName_Click(object sender, RoutedEventArgs e)
         {
-            TextBlock txb = new TextBlock();
-            txb.Text = $"Welkom, {txtName.Text}!";
-            txb.Margin = new Thickness(10);
-            wrpResult.Children.Add(txb);
+            try
+            {
+                TextBlock txb = new TextBlock();
+                string name = SubmitName(txtName.Text,txtName);
+                txb.Text = $"Welkom, {name}!";
+                txb.Margin = new Thickness(10);
+                wrpResult.Children.Add(txb);
+                txtName.Text = string.Empty;
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+            
+        }
+
+        private string SubmitName(string input, TextBox inputTextBox)
+        {
+            if (!string.IsNullOrEmpty(input))
+            {
+                inputTextBox.Text = string.Empty;
+                return input;
+            }
+            else
+            {
+                inputTextBox.Text = string.Empty;
+                inputTextBox.Focus();
+                throw new Exception("Geef een geldige naam in"); 
+            }
         }
     }
 }
