@@ -24,6 +24,11 @@ namespace WPFBasics.wpf
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             txtName.Focus();
+
+            //DATA FOR LISTS FEATURE
+            availableLists = new List<List<string>>();
+            
+            
         }
 
         private void btnSubmitName_Click(object sender, RoutedEventArgs e)
@@ -58,6 +63,27 @@ namespace WPFBasics.wpf
                 inputTextBox.Focus();
                 throw new Exception("Geef een geldige naam in"); 
             }
+        }
+
+        //Make Lists and then add or remove items on list
+
+        List<List<string>> availableLists;
+        private void btnAddList_Click(object sender, RoutedEventArgs e)
+        {
+            availableLists.Add(new List<string>());
+            lstAvailableLists.Items.Add(txtNewList.Text);
+            cmbSelectList.Items.Add(txtNewList.Text);            
+        }
+
+        private void cmbSelectList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            lstShowList.ItemsSource = availableLists[cmbSelectList.SelectedIndex];
+
+        }
+
+        private void btnAddItem_Click(object sender, RoutedEventArgs e)
+        {
+            availableLists[lstAvailableLists.SelectedIndex].Add(txtNewItem.Text);
         }
     }
 }

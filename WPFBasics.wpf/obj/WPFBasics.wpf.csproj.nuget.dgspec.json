@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jonas\\OneDrive\\Jonas DoCumenten\\DoCumenten\\IT\\C#\\06 WPFBasics\\WPFBasics.wpf\\WPFBasics.wpf.csproj": {}
+    "C:\\Users\\jonas\\OneDrive\\Jonas DoCumenten\\IT\\C#\\06 WPFBasics\\WPFBasics.wpf\\WPFBasics.wpf.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jonas\\OneDrive\\Jonas DoCumenten\\DoCumenten\\IT\\C#\\06 WPFBasics\\WPFBasics.wpf\\WPFBasics.wpf.csproj": {
+    "C:\\Users\\jonas\\OneDrive\\Jonas DoCumenten\\IT\\C#\\06 WPFBasics\\WPFBasics.wpf\\WPFBasics.wpf.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jonas\\OneDrive\\Jonas DoCumenten\\DoCumenten\\IT\\C#\\06 WPFBasics\\WPFBasics.wpf\\WPFBasics.wpf.csproj",
+        "projectUniqueName": "C:\\Users\\jonas\\OneDrive\\Jonas DoCumenten\\IT\\C#\\06 WPFBasics\\WPFBasics.wpf\\WPFBasics.wpf.csproj",
         "projectName": "WPFBasics.wpf",
-        "projectPath": "C:\\Users\\jonas\\OneDrive\\Jonas DoCumenten\\DoCumenten\\IT\\C#\\06 WPFBasics\\WPFBasics.wpf\\WPFBasics.wpf.csproj",
+        "projectPath": "C:\\Users\\jonas\\OneDrive\\Jonas DoCumenten\\IT\\C#\\06 WPFBasics\\WPFBasics.wpf\\WPFBasics.wpf.csproj",
         "packagesPath": "C:\\Users\\jonas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jonas\\OneDrive\\Jonas DoCumenten\\DoCumenten\\IT\\C#\\06 WPFBasics\\WPFBasics.wpf\\obj\\",
+        "outputPath": "C:\\Users\\jonas\\OneDrive\\Jonas DoCumenten\\IT\\C#\\06 WPFBasics\\WPFBasics.wpf\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jonas\\AppData\\Roaming\\NuGet\\NuGet.Config",

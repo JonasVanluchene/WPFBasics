@@ -22,6 +22,18 @@
             <Button x:Name="btnSubmitName" Content="Voeg toe" Margin="10" Click="btnSubmitName_Click" />
         </WrapPanel>
         <WrapPanel x:Name="wrpResult" Grid.Column="1"/>
+        <Label Content="Selecteer een lijst" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbSelectList" HorizontalAlignment="Left" Margin="10,41,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120" SelectionChanged="cmbSelectList_SelectionChanged"/>
+        <ListBox x:Name="lstShowList" Grid.Row="1" Margin="190,5,10,10"/>
+        <Button x:Name="btnShowItem" Content="Toon gekozen item" HorizontalAlignment="Left" Margin="10,72,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <TextBlock x:Name="txbResultList" HorizontalAlignment="Left" Margin="10,97,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <Label Grid.Column="1" Content="Maak nieuwe lijst" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <ListBox x:Name="lstAvailableLists" Grid.Column="1" Grid.Row="1"  Margin="220,5,10,10"/>
+        <TextBox x:Name="txtNewList" Grid.Column="1" HorizontalAlignment="Left" Margin="10,34,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnAddList" Grid.Column="1" Content="Voeg lijst toe" HorizontalAlignment="Left" Margin="10,60,0,0" Grid.Row="1" VerticalAlignment="Top" Click="btnAddList_Click"/>
+        <TextBox x:Name="txtNewItem" Grid.Column="1" HorizontalAlignment="Left" Margin="10,116,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Grid.Column="1" Content="Voeg item aan lijst toe" HorizontalAlignment="Left" Margin="10,90,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Button x:Name="btnAddItem" Grid.Column="1" Content="Voeg Toe" HorizontalAlignment="Left" Margin="153,116,0,0" Grid.Row="1" VerticalAlignment="Top" Click="btnAddItem_Click"/>
 
     </Grid>
 </Window>
